@@ -1,0 +1,4 @@
+python-twitter==3.5
+python-dotenv==0.10.3
+flask-restplus==0.13.0
+Werkzeug==0.16.0
