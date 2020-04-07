@@ -68,7 +68,7 @@ class search(Resource):
         return tweets, {
             'X-Total-Count': len(tweets),
             'X-Metrics': {
-                'tpd': tpd
+                'tpd': tpd,
                 'tpl': tpl
             }
             }
