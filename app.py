@@ -7,7 +7,11 @@ from config import config as c
 from words import getWord
 
 app = Flask(__name__)
-CORS(app)
+CORS(app,
+     expose_headers=['X-Total-Count',
+                     'X-Metrics',
+                     'Content-Range']
+)
 api = Api(app)
 
 twitter = tApi(consumer_key=c['apikey'],
@@ -50,7 +54,10 @@ class search(Resource):
                 )
             )
         print (tweet)
-        return tweets
+        return tweets, {
+            'X-Total-Count': len(tweets),
+            'X-Metrics': {}
+            }
 
 
 
