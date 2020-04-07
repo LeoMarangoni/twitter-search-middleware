@@ -2,10 +2,12 @@ import time
 from twitter import Api as tApi
 from flask import Flask, request
 from flask_restplus import Resource, Api, fields
+from flask_cors import CORS
 from config import config as c
 from words import getWord
 
 app = Flask(__name__)
+CORS(app)
 api = Api(app)
 
 twitter = tApi(consumer_key=c['apikey'],
