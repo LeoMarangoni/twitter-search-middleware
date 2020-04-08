@@ -8,12 +8,13 @@ pip install -r requirements.txt
 ```
 
 You will need to set thi following env vars:
-
-api_key=<string>
+```
+api_key=<string> 
 api_secret=<string>
 access_token=<string>
 access_secret=<string>
-
+```
+  
 Please see [Twitter for Develepers](https://developer.twitter.com/)
 
 ### Usage
