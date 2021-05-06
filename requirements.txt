@@ -1,6 +1,6 @@
 pandas==0.25.3
 python-twitter==3.5
 python-dotenv==0.10.3
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 flask-restplus==0.13.0
 Werkzeug==0.16.0
